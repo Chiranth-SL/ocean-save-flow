@@ -52,14 +52,22 @@ const HeroSection = () => {
         >
           <Button
             size="lg"
-            className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 shadow-glow transition-all duration-300 hover:scale-105"
+            onClick={() => {
+              const ctaSection = document.getElementById("cta-section");
+              ctaSection?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 shadow-glow transition-all duration-300 hover:scale-105 cursor-pointer"
           >
             Take Action Now
           </Button>
           <Button
             size="lg"
             variant="outline"
-            className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20 text-lg px-8 py-6 transition-all duration-300"
+            onClick={() => {
+              const statsSection = document.getElementById("stats-section");
+              statsSection?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20 text-lg px-8 py-6 transition-all duration-300 cursor-pointer"
           >
             Learn More
           </Button>
