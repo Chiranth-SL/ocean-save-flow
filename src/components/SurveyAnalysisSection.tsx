@@ -7,6 +7,8 @@ const SurveyAnalysisSection = () => {
     { id: "Survey 1", totalConsumption: 794 },
     { id: "Survey 2", totalConsumption: 961.25 },
     { id: "Survey 3", totalConsumption: 894 },
+    { id: "Survey 4", totalConsumption: 837.5 },
+    { id: "Survey 5", totalConsumption: 918 },
   ];
 
   const averageConsumption = (surveyData.reduce((sum, survey) => sum + survey.totalConsumption, 0) / surveyData.length).toFixed(2);
@@ -57,7 +59,7 @@ const SurveyAnalysisSection = () => {
               <Droplets className="w-12 h-12 text-primary" />
             </div>
             <CardTitle className="text-3xl">Average Daily Water Consumption</CardTitle>
-            <CardDescription>Based on three household surveys</CardDescription>
+            <CardDescription>Based on five household surveys</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="text-center">
